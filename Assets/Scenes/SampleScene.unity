@@ -430,13 +430,13 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1686359478}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d325f90f35b7fab4484a26f3196a545d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  shotDelay: 0.3
+  shotDelay: 5
   bullet: {fileID: 1778948986984412, guid: 7b1de518023ca1a469bc5a39dae37dd5, type: 2}
   canShot: 1
   explosion: {fileID: 0}
@@ -514,7 +514,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1686359478}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d693f5c0efde7c24bba046d7850bce45, type: 3}
   m_Name: 
@@ -541,7 +541,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1686359478}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9bcf4489e30f47a448be28f8e9818fce, type: 3}
   m_Name: 
