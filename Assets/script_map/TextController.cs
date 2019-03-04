@@ -15,6 +15,7 @@ public class TextController : MonoBehaviour
 	private float timeElapsed = 1;
 	private int currentLine = 0;
 	private int lastUpdateCharacter = -1;
+	public GameObject Message;
 
 	// 文字の表示が完了しているかどうか
 	public bool IsCompleteDisplayText 
@@ -31,12 +32,12 @@ public class TextController : MonoBehaviour
 	{
 		// 文字の表示が完了してるならクリック時に次の行を表示する
 		if( IsCompleteDisplayText ){
-			if(currentLine < scenarios.Length && Input.GetMouseButtonDown(0)){
+			if(currentLine < scenarios.Length && Input.GetKeyDown(KeyCode.RightShift)){
 				SetNextLine();
 			}
 		}else{
 		// 完了してないなら文字をすべて表示する
-			if(Input.GetMouseButtonDown(0)){
+			if(Input.GetKeyDown(KeyCode.RightShift)){
 				timeUntilDisplay = 0;
 			}
 		}
@@ -46,6 +47,10 @@ public class TextController : MonoBehaviour
 			uiText.text = currentText.Substring(0, displayCharacterCount);
 			lastUpdateCharacter = displayCharacterCount;
 		}
+
+		/*if (currentLine == senarios) {
+			Message.SetActive (false);
+		}*/
 	}
 
 

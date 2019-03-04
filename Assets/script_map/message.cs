@@ -3,14 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class message : MonoBehaviour {
-	
+
 	public GameObject Message;
 
-	void OnCollisionEnter2D(Collision2D oth)
+	void OnTriggerStay2D(Collider2D oth)
     {
         if (oth.transform.tag == "Player")
         {
-            Message.SetActive (true);;
+			if (Input.GetKeyDown(KeyCode.Return)) {
+				Message.SetActive (true);
+			}
         }
+		/*else {
+			Message.SetActive (false);
+			}*/
     }
 }
