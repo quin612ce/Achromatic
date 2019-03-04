@@ -4,9 +4,17 @@ using UnityEngine;
 
 public class Zenhoui : MonoBehaviour {
 	public GameObject bullet;
+	//private GameObject target;
+//public float GetAim()
+  //  {
+    //    float dx = target.transform.x - transform.position.x;
+      //  float dy = target.transform.y - transform.position.y;
+        //return Mathf.Atan2(dy, dx) * Mathf.Rad2Deg;
+    //}
 
-	//Use this for initialization
+	//Use  */this for initialization
 	void Start () {
+		//target = GameObject.Find ("Player");
 		StartCoroutine (Update_coroutine());
 	}
 
