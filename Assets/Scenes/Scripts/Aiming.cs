@@ -12,7 +12,7 @@ public class Aiming : MonoBehaviour {
 		player = GameObject.Find ("Player");
 		enemy = GameObject.Find ("Enemy1");
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		var vec = (player.transform.position - enemy.transform.position).normalized;
