@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class TextController : MonoBehaviour 
+public class TextControllerPrologue : MonoBehaviour 
 {
 	public int shift = 0;
 	public int count = 0;
@@ -52,7 +52,7 @@ public class TextController : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.RightShift)) {
 			count++;
 		}
-		if (count == shift) {
+		if (count >= shift) {
 			Message.SetActive (false);
 		}
 	}

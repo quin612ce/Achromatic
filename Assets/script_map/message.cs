@@ -5,6 +5,8 @@ using UnityEngine;
 public class message : MonoBehaviour {
 
 	public GameObject Message;
+	public int Count;
+	public int shift;
 
 	void OnTriggerStay2D(Collider2D oth)
     {
@@ -14,8 +16,5 @@ public class message : MonoBehaviour {
 				Message.SetActive (true);
 			}
         }
-		/*else {
-			Message.SetActive (false);
-			}*/
     }
 }
