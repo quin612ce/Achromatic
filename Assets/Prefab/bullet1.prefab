@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212231406489593134}
   - component: {fileID: 50593292769170842}
   - component: {fileID: 70058977726886538}
-  - component: {fileID: 114033529705952162}
+  - component: {fileID: 114884649919074816}
   m_Layer: 9
   m_Name: bullet1
   m_TagString: Untagged
@@ -78,7 +78,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 3.58, y: 3.58}
   m_Direction: 0
---- !u!114 &114033529705952162
+--- !u!114 &114884649919074816
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -86,11 +86,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1103057976472706}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe2da542d0dbc01498a92709464314b9, type: 3}
+  m_Script: {fileID: 11500000, guid: 20c2b21407a8d4528814a14c97b795eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  lifeTime: 5
+  speed: 10
+  lifeTime: 10
   power: 1
 --- !u!212 &212231406489593134
 SpriteRenderer:
