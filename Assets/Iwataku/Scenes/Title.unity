@@ -719,6 +719,7 @@ GameObject:
   - component: {fileID: 1865037511}
   - component: {fileID: 1865037510}
   - component: {fileID: 1865037509}
+  - component: {fileID: 1865037512}
   m_Layer: 5
   m_Name: LoadButton
   m_TagString: Untagged
@@ -783,7 +784,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1865037510}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1865037512}
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1865037510
@@ -820,3 +832,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1865037507}
   m_CullTransparentMesh: 0
+--- !u!114 &1865037512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1865037507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a6d75bc5a811574b92995cb03288a5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PL: {fileID: 0}
+  reposX: 0
+  reposY: 0
