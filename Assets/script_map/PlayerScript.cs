@@ -11,8 +11,8 @@ public class PlayerScript : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        float posX = PlayerPrefs.GetFloat("reposX");
-		float posY = PlayerPrefs.GetFloat("reposY");
+        float posX = PlayerPrefs.GetFloat("reposX",-25);
+		float posY = PlayerPrefs.GetFloat("reposY",-6);
 		this.transform.position = new Vector2(posX,posY);
         PlayerPrefs.DeleteAll();
 	}

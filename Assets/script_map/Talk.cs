@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Chat : MonoBehaviour
+public class Talk : MonoBehaviour
 {
     public GameObject Panel;
     bool talking;
     bool isStay;
     bool end;
-    private LoadText loadText;
+    private Conversation conversation;
     public Text text;
     public int num;
 
@@ -28,7 +28,7 @@ public class Chat : MonoBehaviour
     void Update()
     {
         //接触状態でクリックでパネル表示
-        if (Input.GetMouseButtonDown(0) && isStay && end)
+        if (Input.GetKeyDown(KeyCode.Return) && isStay && end)
         {
             Panel.SetActive(true);
             //会話モードON
@@ -37,15 +37,15 @@ public class Chat : MonoBehaviour
         }
 
         //会話
-        if (Input.GetMouseButtonDown(0) && talking)
+        if (Input.GetKeyDown(KeyCode.Return) && talking)
         {
 
             //テキストの書き換え
-            text.text = loadText.splitText[num];
+            text.text = conversation.splitText[num];
             num++;
 
             //会話が最後なら終了
-            if (num == loadText.rowLength)
+            if (num == conversation.rowLength)
             {
                 Panel.SetActive(false);
                 talking = false;
@@ -61,7 +61,7 @@ public class Chat : MonoBehaviour
     {
         isStay = true;
         end = true;
-        loadText = col.GetComponent<LoadText>();
+        conversation = col.GetComponent<Conversation>();
     }
 
 
