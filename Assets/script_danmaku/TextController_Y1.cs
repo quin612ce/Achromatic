@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class TextController_Y1 : MonoBehaviour {
-	public int shift = 0;
-	public int count = 0;
+	public  int shift = 0;
+	public  int count = 0;
+	public List<GameObject> EnemyList;
 	public GameObject Message;
 	public string[] scenarios;
 	[SerializeField] Text uiText;
@@ -53,6 +55,10 @@ public class TextController_Y1 : MonoBehaviour {
 		}
 		if (count >= shift) {
 			Message.SetActive (false);
+			foreach(GameObject g in EnemyList){
+				g.SetActive(true);
+			}
+
 		}
 	}
 
