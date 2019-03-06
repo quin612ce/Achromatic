@@ -22,14 +22,17 @@ public class OnKeyPress_ChangeAnime : MonoBehaviour {
 		if (Input.GetKey("up")) { // 上キーなら
 			nowMode = upAnime;
 		}
-		if (Input.GetKey("down")) { // 下キーなら
+		else if (Input.GetKey("down")) { // 下キーなら
 			nowMode = downAnime;
 		}
-		if (Input.GetKey("right")) { // 右キーなら
+		else if (Input.GetKey("right")) { // 右キーなら
 			nowMode = rightAnime;
 		}
-		if (Input.GetKey("left")) { // 左キーなら
+		else if (Input.GetKey("left")) { // 左キーなら
 			nowMode = leftAnime;
+		}
+		else {
+			nowMode = "";
 		}
 	}
 	void FixedUpdate() { // ずっと行う（一定時間ごとに）
@@ -38,6 +41,11 @@ public class OnKeyPress_ChangeAnime : MonoBehaviour {
 			oldMode = nowMode;
 			// アニメを切り換える
 			Animator animator = this.GetComponent<Animator>();
+			if(nowMode==""){
+				animator.speed = 0f;
+				return;
+			}
+			animator.speed = 1f;
 			animator.Play(nowMode);
 		}
 	}
