@@ -88,6 +88,7 @@ public class Player : MonoBehaviour {
 
 			//☆hp減少
 			hp = hp -1;
+			Debug.Log(hp);
 
 			//弾の削除
 			Destroy (c.gameObject);
