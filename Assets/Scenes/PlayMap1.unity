@@ -3628,7 +3628,7 @@ Prefab:
         type: 2}
       propertyPath: pauseUIPrefab
       value: 
-      objectReference: {fileID: 1895993396535522, guid: 6418823b90bc82c4886fa6c0331b338f,
+      objectReference: {fileID: 1706007779942360, guid: 6418823b90bc82c4886fa6c0331b338f,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea639f40a54ba67418384bee08657cb7, type: 2}
