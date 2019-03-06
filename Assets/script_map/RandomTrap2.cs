@@ -23,10 +23,10 @@ public class RandomTrap2 : MonoBehaviour {
 
 	void CreatePrefab() {
 		// このオブジェクトの範囲内にランダムに
-		if (reposX2 <= 2) {
+		if (reposX2 <= 24) {
 		Vector3 newPos = this.transform.position;
 		newPos.x += Random.Range(reposX2 - 5, reposX2 + 5);
-		newPos.y += Random.Range(1, 4);
+		newPos.y += Random.Range(5, 8);
 		newPos.z = -5; // 手前に表示
 		// プレハブを作る
 		GameObject newGameObject = Instantiate(newPrefab) as GameObject;
