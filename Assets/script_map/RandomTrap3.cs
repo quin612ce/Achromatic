@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// ときどき、範囲内にランダムにプレハブを作る
+// 範囲内に1秒ごとにプレハブを作る
 public class RandomTrap3 : MonoBehaviour {
 	public GameObject newPrefab; // 作るプレハブ：Inspectorで指定
 	public float intervalSec = 1; // 作成間隔（秒）：Inspectorで指定する
