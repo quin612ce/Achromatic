@@ -11,7 +11,7 @@ public class Talk_Y1 : MonoBehaviour
     public Text text;
     public GameObject Chara;
     public int num;
-	float TimeCount　= 3;
+	float TimeCount　= 1;
 
 
     // Use this for initialization
@@ -29,6 +29,8 @@ public class Talk_Y1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       // Time.timeScale = 0f;
+
 		TimeCount -= Time.deltaTime;
         //接触状態でクリックでパネル表示
         if(TimeCount <= 0 && num < conversation.rowLength)
@@ -53,7 +55,8 @@ public class Talk_Y1 : MonoBehaviour
 				 foreach(GameObject g in EnemyList){
 				g.SetActive(true);
                 }
-                Destroy(Chara);
+                Chara.SetActive(false);
+             //   Time.timeScale = 1f;
             }
         }
 	}
