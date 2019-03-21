@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 public class LoadButton : MonoBehaviour {
 
 	public void OnClick () {
-		SceneManager.LoadScene(PlayerPrefs.GetString("reScene",""));
+		if(PlayerPrefs.HasKey("reScene") != false){
+			SceneManager.LoadScene(PlayerPrefs.GetString("reScene",""));
+		}else{
+			Debug.Log("Nothing!");
+		}
 	}
 }
