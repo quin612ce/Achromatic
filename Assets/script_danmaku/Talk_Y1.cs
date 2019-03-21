@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Talk_Y1 : MonoBehaviour 
 {
@@ -13,6 +14,7 @@ public class Talk_Y1 : MonoBehaviour
     public int num;
 	float TimeCount　= 1;
 
+    public string nextSceneName;
 
     // Use this for initialization
     void Start()
@@ -56,6 +58,7 @@ public class Talk_Y1 : MonoBehaviour
 				g.SetActive(true);
                 }
                 Chara.SetActive(false);
+                SceneManager.LoadScene (nextSceneName, LoadSceneMode.Single);
              //   Time.timeScale = 1f;
             }
         }

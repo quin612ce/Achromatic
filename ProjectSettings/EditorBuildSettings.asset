@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Iwataku/Scenes/Title.unity
     guid: b49d8ae7a9c15994c99cbefdf8428d49
+  - enabled: 1
+    path: Assets/Scenes/Stage-Y2.unity
+    guid: 4535b498a08eda54cb334f4ea0335643
   m_configObjects: {}

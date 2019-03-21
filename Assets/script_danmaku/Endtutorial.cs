@@ -7,9 +7,13 @@ public class Endtutorial : MonoBehaviour {
 
 	public string nextSceneName;
 
-	public GameObject Chara;
+	public float FinishSecond;
 
-	public float TimeCount;
+void changeNext(){
+	if (Time.timeSinceLevelLoad > FinishSecond) {
+		SceneManager.LoadScene (nextSceneName, LoadSceneMode.Single);
+	}
+}
 
 	// Use this for initialization
 	void Start () {
@@ -18,12 +22,8 @@ public class Endtutorial : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Chara.activeSelf){
-			TimeCount++;
-		}
-		if (TimeCount == 20.0f)
-		{
-			SceneManager.LoadScene (nextSceneName, LoadSceneMode.Single);
-		}
+	if (Time.timeSinceLevelLoad > FinishSecond){
+		SceneManager.LoadScene (nextSceneName, LoadSceneMode.Single);
+	}
 	}
 }
