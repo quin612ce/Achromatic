@@ -16,7 +16,7 @@ public class RandomTrap2 : MonoBehaviour {
 	}
 
 	void Update() {
-		PL2 = GameObject.Find("Player");
+		PL2 = GameObject.Find("PlayerAnime");
 		reposX2 = PL2.transform.position.x;
 		reposY2 = PL2.transform.position.y;
 	}
