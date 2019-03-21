@@ -1119,7 +1119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 930ecd2c1011eb948b89398ca87ae561, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseUIPrefab: {fileID: 1793429522393056, guid: 6418823b90bc82c4886fa6c0331b338f,
+  pauseUIPrefab: {fileID: 1673385156344596, guid: 6418823b90bc82c4886fa6c0331b338f,
     type: 2}
 --- !u!4 &550069799
 Transform:
@@ -4652,7 +4652,6 @@ MonoBehaviour:
   Panel: {fileID: 1696289521}
   text: {fileID: 1194555287}
   num: 0
-  scenechange: 0
 --- !u!50 &1741401069
 Rigidbody2D:
   serializedVersion: 4
