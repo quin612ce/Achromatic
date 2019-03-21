@@ -34,7 +34,7 @@ public float GetAim()
             {
                 Instantiate(bullet, this.transform.position, Quaternion.Euler (this.transform.rotation.eulerAngles+ new Vector3(0, 0, dir + index * 30 + 15)));
             }
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForSeconds(0.4f);
             count++;
 		}
 	}
