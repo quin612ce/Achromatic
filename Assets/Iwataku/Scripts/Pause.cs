@@ -9,7 +9,7 @@ public class Pause : MonoBehaviour {
 	private GameObject pauseUIInstance;
 	void Update () {
 		if(Input.GetKeyDown("q")){
-			Debug.Log("put q!");
+			//Debug.Log("put q!");
 			if(pauseUIInstance == null){
 				pauseUIInstance = GameObject.Instantiate(pauseUIPrefab) as GameObject;
 				Time.timeScale = 0f;

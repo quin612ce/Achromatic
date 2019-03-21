@@ -1,12 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class StartButton : MonoBehaviour {
+public class DeleteButton : MonoBehaviour {
 
 	public void OnClick () {
 		PlayerPrefs.DeleteAll();
-		SceneManager.LoadScene("Prologue");
+		Destroy(GameObject.Find("BackGround1(Clone)"));
 	}
 }
