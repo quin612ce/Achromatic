@@ -24,7 +24,7 @@ public class RandomTrap4 : MonoBehaviour {
 		reposX2 = newPos.x;
 		reposY2 = newPos.y;
 		// プレハブを作る
-		if (reposX2 <= -4) {
+		if (reposX2 <= -1) {
 		GameObject newGameObject = Instantiate(newPrefab) as GameObject;
 		newGameObject.transform.position = newPos;
 		}

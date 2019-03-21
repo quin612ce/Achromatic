@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
+//using UnityEngine.SceneManagement;
 
 public class TalkP : MonoBehaviour
 {
@@ -11,6 +11,7 @@ public class TalkP : MonoBehaviour
     public Text text;
     public int num;
 	float TimeCount　= 3;
+    public bool scenechangeP = false;
 
 
     // Use this for initialization
@@ -46,9 +47,10 @@ public class TalkP : MonoBehaviour
             //会話が最後なら終了
             if (num == conversation.rowLength)
             {
+                scenechangeP = true;
                 Panel.SetActive(false);
 				Debug.Log("ToBlack");
-				SceneManager.LoadScene("Prologue_2"); 
+				//SceneManager.LoadScene("Prologue_2"); 
             }
         }
     }

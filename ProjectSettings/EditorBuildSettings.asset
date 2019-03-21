@@ -12,11 +12,23 @@ EditorBuildSettings:
     path: Assets/Scenes/Prologue_2.unity
     guid: 3a9fa14a2afa04757988f85c45e7f99d
   - enabled: 1
-    path: Assets/Scenes/PlayMap1.unity
+    path: Assets/Scenes/PlayMap1_first.unity
     guid: 5fdf6613bfe3a4e9c9397ca840be0c87
+  - enabled: 1
+    path: Assets/Scenes/PlayMap1.unity
+    guid: 5fb1361f18e98425d9811d5700751b6b
+  - enabled: 1
+    path: Assets/Scenes/PlayMap2_first.unity
+    guid: f04649ec12db04d0bbffcfb96d7b9287
   - enabled: 1
     path: Assets/Scenes/PlayMap2.unity
     guid: 65a15fa2c31134561a055da10b9c2cb4
+  - enabled: 1
+    path: Assets/Scenes/Stage1-Y.unity
+    guid: 9aed6d95732d6ec48b93e89c6ecf5f1e
+  - enabled: 1
+    path: Assets/Scenes/Stage2_encount.unity
+    guid: e6c66e7ad3a9d074daad239493dc51ae
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729

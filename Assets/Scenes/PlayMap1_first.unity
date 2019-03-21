@@ -3550,6 +3550,7 @@ GameObject:
   - component: {fileID: 1525219970}
   - component: {fileID: 1525219969}
   - component: {fileID: 1525219968}
+  - component: {fileID: 1525219971}
   m_Layer: 5
   m_Name: fade_in_out
   m_TagString: Untagged
@@ -3599,7 +3600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3621,6 +3622,19 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1525219966}
   m_CullTransparentMesh: 0
+--- !u!114 &1525219971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1525219966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76afd17811b1b4c15aecb3c00552c9d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFadeOut: 0
+  isFadeIn: 0
 --- !u!1 &1546030170
 GameObject:
   m_ObjectHideFlags: 0
@@ -4638,6 +4652,7 @@ MonoBehaviour:
   Panel: {fileID: 1696289521}
   text: {fileID: 1194555287}
   num: 0
+  scenechange: 0
 --- !u!50 &1741401069
 Rigidbody2D:
   serializedVersion: 4

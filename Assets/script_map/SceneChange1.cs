@@ -9,7 +9,7 @@ public class SceneChange1 : MonoBehaviour {
     {
         if (oth.transform.tag == "Player")
         {
-            SceneManager.LoadScene("PlayMap2");
+            SceneManager.LoadScene("PlayMap2_first");
         }
     }
 }

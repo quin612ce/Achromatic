@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneChangeP : MonoBehaviour {
+	//もしかしたらこのスクリプトはどこにも使っていないかも
 
 	public int shift = 0;
 	public int count = 0;
