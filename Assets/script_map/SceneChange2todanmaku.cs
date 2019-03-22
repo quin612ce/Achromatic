@@ -17,7 +17,7 @@ public class SceneChange2todanmaku : MonoBehaviour {
         {
             Panel.SetActive(false);
 			Debug.Log("Todanmaku2");
-            SceneManager.LoadScene("Stage-Y2");
+            SceneManager.LoadScene("Stage-O1");
         }
     }
 }
