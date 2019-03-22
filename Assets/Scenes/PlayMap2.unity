@@ -1049,6 +1049,7 @@ GameObject:
   - component: {fileID: 245564011}
   - component: {fileID: 245564010}
   - component: {fileID: 245564015}
+  - component: {fileID: 245564016}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1169,6 +1170,21 @@ MonoBehaviour:
   stone2: {fileID: 167513778}
   newPrefab1: {fileID: 0}
   newPrefab2: {fileID: 0}
+  PL: {fileID: 0}
+  reposX: 0
+  reposY: 0
+--- !u!114 &245564016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 245564009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6812e255bb53446039bfcb0ce1516df4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Panel: {fileID: 812214216}
   PL: {fileID: 0}
   reposX: 0
   reposY: 0

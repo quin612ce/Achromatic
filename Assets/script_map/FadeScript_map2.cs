@@ -49,32 +49,33 @@ public class FadeScript_map2 : MonoBehaviour {
 
     void CreatePrefab1() {
 		// このオブジェクトの範囲内に
-		Vector3 newPos = this.transform.position;
-		newPos.x = reposX2 - 2.5f;
+		Vector3 newPos1 = this.transform.position;
+		newPos1.x = reposX2 - 2.5f;
 		//newPos.y = reposY2 + 2;
-		newPos.z = -5; // 手前に表示
-		reposX1 = newPos.x;
-		reposY1 = newPos.y;
+		newPos1.z = -5; // 手前に表示
+		reposX1 = newPos1.x;
+		reposY1 = newPos1.y;
 		// プレハブを作る
 		if (reposX1 >= -18 && count == 4) {
+            Debug.Log("プレハブができる？");
 		GameObject newGameObject = Instantiate(newPrefab1) as GameObject;
-		newGameObject.transform.position = newPos;
+		newGameObject.transform.position = newPos1;
 		}
 
 	}
 
     void CreatePrefab2() {
 		// このオブジェクトの範囲内に
-		Vector3 newPos = this.transform.position;
-		newPos.x = reposX2 - 2.5f;
+		Vector3 newPos2 = this.transform.position;
+		newPos2.x = reposX2 - 2.5f;
 		//newPos.y = reposY2 + 2;
-		newPos.z = -5; // 手前に表示
-		reposX2 = newPos.x;
-		reposY2 = newPos.y;
+		newPos2.z = -5; // 手前に表示
+		reposX2 = newPos2.x;
+		reposY2 = newPos2.y;
 		// プレハブを作る
 		if (reposX2 >= -18 && count == 4) {
 		GameObject newGameObject = Instantiate(newPrefab2) as GameObject;
-		newGameObject.transform.position = newPos;
+		newGameObject.transform.position = newPos2;
 		}
 
 	}
