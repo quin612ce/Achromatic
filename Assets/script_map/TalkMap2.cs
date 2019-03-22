@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Talk : MonoBehaviour
+public class TalkMap2 : MonoBehaviour
 {
     public GameObject Panel;
     bool talking;
@@ -29,7 +29,7 @@ public class Talk : MonoBehaviour
     void Update()
     {
         //接触状態でクリックでパネル表示
-        if (Input.GetKeyDown(KeyCode.Return) && isStay && end)
+        if (isStay && end)
         {
             Panel.SetActive(true);
             //会話モードON

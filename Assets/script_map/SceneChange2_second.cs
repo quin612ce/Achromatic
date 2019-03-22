@@ -1,11 +1,10 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-//PlayMap1_firstに入るタイミングでのfadeinに使うスクリプト
-
-public class FadeScript3 : MonoBehaviour {
- 
+public class SceneChange2_second : MonoBehaviour {
 	float fadeSpeed = 0.02f;        //透明度が変わるスピードを管理
 	float red, green, blue, alfa;   //パネルの色、不透明度を管理
  
@@ -13,7 +12,9 @@ public class FadeScript3 : MonoBehaviour {
 	public bool isFadeIn = false;   //フェードイン処理の開始、完了を管理するフラグ
  
 	Image fadeImage;                //透明度を変更するパネルのイメージ
- 
+
+	//float TimeCount1　= 5;
+
 	void Start () {
 		fadeImage = GetComponent<Image> ();
 		red = fadeImage.color.r;
@@ -21,6 +22,9 @@ public class FadeScript3 : MonoBehaviour {
 		blue = fadeImage.color.b;
 		alfa = fadeImage.color.a;
 		isFadeIn = true; 
+
+		Invoke("fade", 5);
+		Invoke("scenechange", 7);
 	}
  
 	void Update () {
@@ -31,8 +35,22 @@ public class FadeScript3 : MonoBehaviour {
 		if (isFadeOut) {
 			StartFadeOut ();
 		}
+		//TimeCount1 -= Time.deltaTime;
+        //接触状態でクリックでパネル表示
+        //if(TimeCount1 <= 0)
+        //{
+            //isFadeOut = true;
+		//}
 	}
- 
+
+	void fade() {
+		isFadeOut = true;
+	} //フェードアウトする関数
+
+	void scenechange() {
+		SceneManager.LoadScene("PlayMap2");
+	} //シーン遷移の関数
+
 	void StartFadeIn(){
 		alfa -= fadeSpeed;                //a)不透明度を徐々に下げる
 		SetAlpha ();                      //b)変更した不透明度パネルに反映する
@@ -41,7 +59,6 @@ public class FadeScript3 : MonoBehaviour {
 			fadeImage.enabled = false;    //d)パネルの表示をオフにする
 		}
 	}
- 
 	void StartFadeOut(){
 		fadeImage.enabled = true;  // a)パネルの表示をオンにする
 		alfa += fadeSpeed;         // b)不透明度を徐々にあげる

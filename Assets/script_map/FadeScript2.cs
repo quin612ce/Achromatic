@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
+/*
 public class FadeScript2 : MonoBehaviour {
     float alfa;
     float speed = 0.01f;
@@ -27,3 +27,4 @@ public class FadeScript2 : MonoBehaviour {
         }
     }
 }
+*/

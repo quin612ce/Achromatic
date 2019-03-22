@@ -11,6 +11,7 @@ public class TalkMap1 : MonoBehaviour
     public Text text;
     public int num;
 	float TimeCount　= 1;
+    public bool TalkEnd = false;
 
 
     // Use this for initialization
@@ -18,6 +19,7 @@ public class TalkMap1 : MonoBehaviour
     {
         //パネルを非表示に
         Panel.SetActive(false);
+        Debug.Log("パネルオフ");
         //会話カウントの初期値
         num = 0;
     }
@@ -46,6 +48,7 @@ public class TalkMap1 : MonoBehaviour
             //会話が最後なら終了
             if (num == conversation.rowLength)
             {
+                TalkEnd = true;
                 Panel.SetActive(false);
 				Debug.Log("FirstClear");
             }
