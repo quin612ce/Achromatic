@@ -36,9 +36,7 @@ public class FadeScript_map2 : MonoBehaviour {
 		if (count == 19) 
         {
             Panel.SetActive(false);
-			Debug.Log("パネル消えて...");
             SceneManager.LoadScene("PlayMap2_second");
-            //fadeImage.enabled = true; 
 			GetComponent<Image>().color = new Color(red, green, blue, alfa);
 			alfa += speed;
 			if (alfa == 1) {
@@ -56,8 +54,10 @@ public class FadeScript_map2 : MonoBehaviour {
 		reposX1 = newPos1.x;
 		reposY1 = newPos1.y;
 		// プレハブを作る
-		if (reposX1 >= -18 && count == 4) {
+		if (/*reposX1 >= -18 &&*/ count == 4) {
             Debug.Log("プレハブができる？");
+			reposX1 = -6;
+			reposY1 = 0;
 		GameObject newGameObject = Instantiate(newPrefab1) as GameObject;
 		newGameObject.transform.position = newPos1;
 		}
@@ -73,7 +73,9 @@ public class FadeScript_map2 : MonoBehaviour {
 		reposX2 = newPos2.x;
 		reposY2 = newPos2.y;
 		// プレハブを作る
-		if (reposX2 >= -18 && count == 4) {
+		if (/* reposX2 >= -18 && */count == 4) {
+			reposX1 = -20;
+			reposY1 = 0;
 		GameObject newGameObject = Instantiate(newPrefab2) as GameObject;
 		newGameObject.transform.position = newPos2;
 		}
