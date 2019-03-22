@@ -27,7 +27,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Stage1-Y.unity
     guid: 9aed6d95732d6ec48b93e89c6ecf5f1e
   - enabled: 1
-    path: Assets/Scenes/Stage2_encount.unity
+    path: Assets/Scenes/Stage-O2.unity
     guid: e6c66e7ad3a9d074daad239493dc51ae
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
@@ -41,4 +41,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Stage-Y3.unity
     guid: be08dbbf140066a4e9c25d8c76d517c3
+  - enabled: 1
+    path: Assets/Scenes/Stage-O3.unity
+    guid: 04bc2b9c813b7fa4ea04afbf97873dbd
+  - enabled: 1
+    path: Assets/Scenes/GameOver-danmaku.unity
+    guid: 5af081dee1c9ccf4f86c7171ae4c959e
   m_configObjects: {}

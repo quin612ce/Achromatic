@@ -29,7 +29,7 @@ void changeNext(){
 	IEnumerator Update_1 () {
 
 		while(true){
-			genepoint = new Vector3(Random.Range(-5, 5), 6, 0);
+			genepoint = new Vector3(Random.Range(-8, 9), 6, 0);
 		Instantiate(Randombullet, genepoint, Quaternion.identity);
 			yield return new WaitForSeconds (genetime);
 			if (Time.timeSinceLevelLoad > 10.0f) {

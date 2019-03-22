@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour {
 
 	public int hp = 1;
@@ -13,6 +13,8 @@ public class Player : MonoBehaviour {
 	//☆public int bPower = bltScript.power;
 
 	danmaku danmaku;
+
+	public string nextSceneName;
 
 	IEnumerator Start ()
 	{
@@ -98,6 +100,7 @@ public class Player : MonoBehaviour {
 
 			Destroy (gameObject);
 				Debug.Log("Unchi");
+				SceneManager.LoadScene (nextSceneName, LoadSceneMode.Single);
 			//hpが0以下の時
 			//if (hp <= 0)
 			//{
