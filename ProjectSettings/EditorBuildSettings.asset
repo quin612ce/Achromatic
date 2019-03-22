@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Iwataku/Scenes/Title.unity
+    guid: b49d8ae7a9c15994c99cbefdf8428d49
+  - enabled: 1
     path: Assets/Scenes/Prologue.unity
     guid: c2f6691c9859b4a6d90e18fc5b86f11b
   - enabled: 0
@@ -15,30 +18,41 @@ EditorBuildSettings:
     path: Assets/Scenes/PlayMap1_first.unity
     guid: 5fdf6613bfe3a4e9c9397ca840be0c87
   - enabled: 1
+    path: Assets/Scenes/PlayMap1_second.unity
+    guid: f2943d50217804b74be33317c6428b75
+  - enabled: 1
     path: Assets/Scenes/PlayMap1.unity
     guid: 5fb1361f18e98425d9811d5700751b6b
   - enabled: 1
     path: Assets/Scenes/PlayMap2_first.unity
     guid: f04649ec12db04d0bbffcfb96d7b9287
   - enabled: 1
+    path: Assets/Scenes/PlayMap2_second.unity
+    guid: 7b85badbae758456c82c52cb82b295fd
+  - enabled: 1
     path: Assets/Scenes/PlayMap2.unity
     guid: 65a15fa2c31134561a055da10b9c2cb4
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scenes/Stage1-Y.unity
     guid: 9aed6d95732d6ec48b93e89c6ecf5f1e
   - enabled: 1
     path: Assets/Scenes/Stage-O2.unity
+=======
+    path: Assets/Scenes/Stage2_encount.unity
+>>>>>>> remotes/origin/Branch_m2
     guid: e6c66e7ad3a9d074daad239493dc51ae
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Iwataku/Scenes/Title.unity
-    guid: b49d8ae7a9c15994c99cbefdf8428d49
+    path: Assets/Scenes/Stage1-Y.unity
+    guid: 9aed6d95732d6ec48b93e89c6ecf5f1e
   - enabled: 1
     path: Assets/Scenes/Stage-Y2.unity
     guid: 4535b498a08eda54cb334f4ea0335643
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scenes/Stage-Y3.unity
     guid: be08dbbf140066a4e9c25d8c76d517c3
   - enabled: 1
@@ -47,4 +61,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver-danmaku.unity
     guid: 5af081dee1c9ccf4f86c7171ae4c959e
+=======
+    path: Assets/Scenes/PlayMap2_last.unity
+    guid: e13ac0c1aaeba402ab24d9619d230662
+>>>>>>> remotes/origin/Branch_m2
   m_configObjects: {}
