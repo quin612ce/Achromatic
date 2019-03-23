@@ -1083,12 +1083,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -34.040764, y: -0.30272484}
-      - {x: -34.303135, y: -16.679796}
+    - - {x: -39.047813, y: -0.30272484}
+      - {x: -38.96487, y: -16.161827}
       - {x: -27.104809, y: -16.099653}
       - {x: -16.25875, y: -16.146593}
-      - {x: -15.869263, y: -16.224594}
-      - {x: -15.940519, y: -15.850006}
+      - {x: -7.75439, y: -16.138266}
+      - {x: -7.6529903, y: -0.3972168}
       - {x: -16.046154, y: -0.27250057}
 --- !u!114 &245564012
 MonoBehaviour:
@@ -2261,7 +2261,7 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 1534549474}
+  m_Follow: {fileID: 1460158811}
   m_Lens:
     FieldOfView: 40
     OrthographicSize: 8
@@ -2276,7 +2276,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 859242131}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25, y: -6, z: -12}
+  m_LocalPosition: {x: -25, y: -6, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1914370826}
@@ -3431,7 +3431,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseUIPrefab: {fileID: 1673385156344596, guid: 6418823b90bc82c4886fa6c0331b338f,
     type: 2}
-  PL: {fileID: 0}
 --- !u!4 &1504840481
 Transform:
   m_ObjectHideFlags: 0
@@ -4106,7 +4105,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1727156025}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30.083855, y: -5.844594, z: -12}
+  m_LocalPosition: {x: -24.750088, y: -5.9226155, z: -10}
   m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
