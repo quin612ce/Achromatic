@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class To_Y : MonoBehaviour {
+public class ToTitle : MonoBehaviour {
 
 	public void ButtonClicked () {
-        SceneManager.LoadScene ("PlayMap1_second");
+        SceneManager.LoadScene ("title");
     }
 }

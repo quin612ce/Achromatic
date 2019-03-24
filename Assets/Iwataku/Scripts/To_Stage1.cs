@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class To_O : MonoBehaviour {
+public class To_Stage1 : MonoBehaviour {
 
 	public void ButtonClicked () {
-        SceneManager.LoadScene ("PlayMap2_last");
+        SceneManager.LoadScene ("Stage1-Y");
     }
 }
