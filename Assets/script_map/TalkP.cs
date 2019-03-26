@@ -10,7 +10,7 @@ public class TalkP : MonoBehaviour
     private Conversation conversation;
     public Text text;
     public int num;
-	float TimeCount　= 3;
+	float TimeCount　= 2;
     public bool scenechangeP = false;
 
 
@@ -32,6 +32,8 @@ public class TalkP : MonoBehaviour
         if(TimeCount <= 0)
         {
             Panel.SetActive(true);
+            conversation = GetComponent<Conversation>();
+            text.text = conversation.splitText[num];
 
         }
 
@@ -41,16 +43,15 @@ public class TalkP : MonoBehaviour
 
             //テキストの書き換え
 			conversation = GetComponent<Conversation>();
-            text.text = conversation.splitText[num];
+            text.text = conversation.splitText[num + 1];
             num++;
 
             //会話が最後なら終了
-            if (num == conversation.rowLength)
+            if (num + 1 == conversation.rowLength)
             {
                 scenechangeP = true;
                 Panel.SetActive(false);
-				Debug.Log("ToBlack");
-				//SceneManager.LoadScene("Prologue_2"); 
+				Debug.Log("ToMap1");
             }
         }
     }
