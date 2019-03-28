@@ -218,11 +218,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4517604627507440, guid: 37bdd00edb171b8418da4a894d9dfd82, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.2
+      value: 0.173398
       objectReference: {fileID: 0}
     - target: {fileID: 4517604627507440, guid: 37bdd00edb171b8418da4a894d9dfd82, type: 2}
       propertyPath: m_LocalScale.y
-      value: 0.15
+      value: 0.1300485
       objectReference: {fileID: 0}
     - target: {fileID: 114699832311557838, guid: 37bdd00edb171b8418da4a894d9dfd82,
         type: 2}
@@ -239,9 +239,23 @@ Prefab:
       propertyPath: nextSceneName
       value: Stage-Y3
       objectReference: {fileID: 0}
+    - target: {fileID: 60470626347679498, guid: 37bdd00edb171b8418da4a894d9dfd82,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517604627507440, guid: 37bdd00edb171b8418da4a894d9dfd82, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.5273359
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37bdd00edb171b8418da4a894d9dfd82, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &394604075 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1917496885716068, guid: 37bdd00edb171b8418da4a894d9dfd82,
+    type: 2}
+  m_PrefabInternal: {fileID: 393012290}
 --- !u!1 &450951223
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,7 +292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb312d6a33d2e420ea6130c729c517c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 0}
+  Player: {fileID: 394604075}
   bullet: {fileID: 1693194126533456, guid: f59138b1d6bb83240a8d3d980e4afd4b, type: 2}
 --- !u!114 &450951225
 MonoBehaviour:

@@ -188,7 +188,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &220675842
 GameObject:
@@ -479,6 +479,33 @@ Prefab:
       propertyPath: nextSceneName
       value: GameOver-danmaku
       objectReference: {fileID: 0}
+    - target: {fileID: 114699832311557838, guid: 37bdd00edb171b8418da4a894d9dfd82,
+        type: 2}
+      propertyPath: Slowspeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114699832311557838, guid: 37bdd00edb171b8418da4a894d9dfd82,
+        type: 2}
+      propertyPath: Normalspeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517604627507440, guid: 37bdd00edb171b8418da4a894d9dfd82, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.10314601
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517604627507440, guid: 37bdd00edb171b8418da4a894d9dfd82, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.077359505
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517604627507440, guid: 37bdd00edb171b8418da4a894d9dfd82, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.90853757
+      objectReference: {fileID: 0}
+    - target: {fileID: 60470626347679498, guid: 37bdd00edb171b8418da4a894d9dfd82,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37bdd00edb171b8418da4a894d9dfd82, type: 2}
   m_IsPrefabAsset: 0
@@ -642,7 +669,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef82f5cea2281a942a484f0015df0b33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: GameOver-danmaku
 --- !u!114 &1217034204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -654,6 +680,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e5fe2edf6b758479fa1fb3dec74cf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1217034206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1217034197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c0790ce44f686745a6bd9fa834fc581, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Randombullet: {fileID: 0}
+  nextSceneName: 
+  genetime: 0
 --- !u!1 &1488560656
 GameObject:
   m_ObjectHideFlags: 0
