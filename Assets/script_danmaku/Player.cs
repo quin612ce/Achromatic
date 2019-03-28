@@ -59,8 +59,15 @@ public class Player : MonoBehaviour {
 		//プレイヤーの座標を取得
 		Vector2 pos = transform.position;
 
+		if (Input.GetKey(KeyCode.LeftShift)){
+			GetComponent<Rigidbody2D>().velocity = direction * danmaku.Slowspeed;
+		}
+		else{
+			GetComponent<Rigidbody2D>().velocity = direction * danmaku.Normalspeed;
+		}
+
 		//移動量を抑える
-		pos += direction * danmaku.speed * Time.deltaTime;
+		//pos += direction * danmaku.Normalspeed * Time.deltaTime;
 
 		//プレイヤーの位置が画面内に収まるように制限を掛ける
 		pos.x = Mathf.Clamp (pos.x, min.x, max.x);

@@ -7,7 +7,9 @@ using UnityEngine;
 public class danmaku : MonoBehaviour
 {
 	//機体の移動速度
-	public float speed;
+	public float Normalspeed;
+
+	public float Slowspeed;
 
 	//弾射出の間隔
 	public float shotDelay;
@@ -32,14 +34,17 @@ public class danmaku : MonoBehaviour
 
 		Instantiate (bullet, origin.position, origin.rotation);
 	}
-
+	
 	// Use this for initialization
 	void Start () {
-		
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+		//if(Input.GetKey(KeyCode.LeftShift)){
+		//	GetComponent<Rigidbody2D>().velocity =  * Slowspeed;
+		//	}
+
+		}
 	}
-}

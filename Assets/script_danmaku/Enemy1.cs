@@ -39,7 +39,7 @@ public class Enemy1 : MonoBehaviour {
 	//機体の移動
 	public void Move (Vector2 direction)
 	{
-		GetComponent<Rigidbody> ().velocity = direction * danmaku.speed;
+		GetComponent<Rigidbody> ().velocity = direction * danmaku.Normalspeed;
 	}
 
 	void OnTriggerEnter2D (Collider2D c)

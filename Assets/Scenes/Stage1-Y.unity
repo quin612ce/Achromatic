@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 1335080388462564, guid: 158bb33880b6a7f448082b4ae5c30c5b, type: 2}
-  target: {fileID: 292985457}
+  target: {fileID: 0}
 --- !u!114 &259242064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,7 +274,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d18774d181a384baebeb1d2ae8760bbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  Normalspeed: 0
+  Slowspeed: 0
   shotDelay: 2
   bullet: {fileID: 1146709285382800, guid: 27917f9efb30ecc4c946098791023d0b, type: 2}
   canShot: 1
@@ -431,11 +432,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 279598671}
   m_CullTransparentMesh: 0
---- !u!1 &292985457 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1066144269082630, guid: 37bdd00edb171b8418da4a894d9dfd82,
-    type: 2}
-  m_PrefabInternal: {fileID: 1079960743}
 --- !u!1 &366994331
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,7 +719,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d18774d181a384baebeb1d2ae8760bbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7.5
+  Normalspeed: 0
+  Slowspeed: 0
   shotDelay: 3
   bullet: {fileID: 1347497521132342, guid: c746c34a7e8b8d446b630df62146f098, type: 2}
   canShot: 1
@@ -762,7 +759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb312d6a33d2e420ea6130c729c517c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 292985457}
+  Player: {fileID: 0}
   bullet: {fileID: 1335080388462564, guid: 158bb33880b6a7f448082b4ae5c30c5b, type: 2}
 --- !u!1 &854743682
 GameObject:
@@ -1092,6 +1089,15 @@ Prefab:
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[16].y
       value: 4.7854366
       objectReference: {fileID: 0}
+    - target: {fileID: 114598861874902456, guid: 37bdd00edb171b8418da4a894d9dfd82,
+        type: 2}
+      propertyPath: nextSceneName
+      value: Stage-Y2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1917496885716068, guid: 37bdd00edb171b8418da4a894d9dfd82, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37bdd00edb171b8418da4a894d9dfd82, type: 2}
   m_IsPrefabAsset: 0
@@ -1402,7 +1408,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1696917186
 GameObject:
@@ -1722,7 +1728,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d18774d181a384baebeb1d2ae8760bbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  Normalspeed: 0
+  Slowspeed: 0
   shotDelay: 1.5
   bullet: {fileID: 1347497521132342, guid: c746c34a7e8b8d446b630df62146f098, type: 2}
   canShot: 1
@@ -1860,7 +1867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb312d6a33d2e420ea6130c729c517c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 292985457}
+  Player: {fileID: 0}
   bullet: {fileID: 1335080388462564, guid: 158bb33880b6a7f448082b4ae5c30c5b, type: 2}
 --- !u!1 &1883967561
 GameObject:
