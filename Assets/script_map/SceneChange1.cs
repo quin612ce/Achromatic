@@ -19,7 +19,7 @@ void Update () {
 		if (Input.GetKeyDown(KeyCode.Return)) {
 			count += 1;
 		}
-		if (count == 37) 
+		if (count == 36) 
         {
             SceneManager.LoadScene("PlayMap1_second");
         }

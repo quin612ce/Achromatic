@@ -13,7 +13,7 @@ public class SceneChange2todanmaku : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.Return)) {
 			count += 1;
 		}
-		if (count == 17) 
+		if (count == 16) 
         {
             Panel.SetActive(false);
 			Debug.Log("Todanmaku2");

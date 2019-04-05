@@ -42,11 +42,11 @@ public class TalkMap2 : MonoBehaviour
         {
 
             //テキストの書き換え
-            text.text = conversation.splitText[num];
+            text.text = conversation.splitText[num + 1];
             num++;
 
             //会話が最後なら終了
-            if (num == conversation.rowLength)
+            if (num + 1 == conversation.rowLength)
             {
                 Panel.SetActive(false);
                 talking = false;
