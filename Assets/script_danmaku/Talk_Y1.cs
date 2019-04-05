@@ -50,7 +50,7 @@ public class Talk_Y1 : MonoBehaviour
             num++;
 
             //会話が最後なら終了
-            if (num == conversation.rowLength)
+            if (num　== conversation.rowLength)
             {
 
                 Panel.SetActive(false);
