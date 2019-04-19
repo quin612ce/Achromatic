@@ -17,23 +17,23 @@ public class PlayerScript : MonoBehaviour
         PlayerPrefs.DeleteAll();
 	}
 
-    void Update()
+    void FixedUpdate()
     {
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            this.gameObject.transform.Translate (0.1f, 0, 0);
+            this.gameObject.transform.Translate (6f*Time.deltaTime, 0, 0);
         }
         else if(Input.GetKey(KeyCode.LeftArrow))
         {
-			this.gameObject.transform.Translate (-0.1f, 0, 0);
+			this.gameObject.transform.Translate (-6f*Time.deltaTime, 0, 0);
         }
 		else if(Input.GetKey(KeyCode.UpArrow))
         {
-			this.gameObject.transform.Translate (0, 0.1f, 0);
+			this.gameObject.transform.Translate (0, 6f*Time.deltaTime, 0);
         }
 		else if(Input.GetKey(KeyCode.DownArrow))
         {
-			this.gameObject.transform.Translate (0, -0.1f, 0);
+			this.gameObject.transform.Translate (0, -6f*Time.deltaTime, 0);
         }
     }
 }
